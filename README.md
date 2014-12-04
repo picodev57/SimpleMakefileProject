@@ -1,0 +1,4 @@
+SimpleMakefileProject
+=====================
+
+Minimalistic Makefile Project
