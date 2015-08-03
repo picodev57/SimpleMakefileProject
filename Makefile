@@ -216,7 +216,8 @@ ifdef PKGLIST
     $(error Missing pkg-config or invalid package in '$(PKGLIST)')
   endif
   CFLAGS            += $(shell $(PKGCONFIG) --cflags $(PKGLIST))
-  LDFLAGS           += $(shell $(PKGCONFIG) --libs $(PKGLIST))
+  LDFLAGS           += $(shell $(PKGCONFIG) --libs-only-L $(PKGLIST))
+  LDLIBS            += $(shell $(PKGCONFIG) --libs-only-l $(PKGLIST))
 endif
 
 #

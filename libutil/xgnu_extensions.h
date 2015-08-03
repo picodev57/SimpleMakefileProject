@@ -85,6 +85,7 @@
 
 #define XGNU_LIKELY(expr)   (__builtin_expect( (expr), 1 ))
 #define XGNU_UNLIKELY(expr) (__builtin_expect( (expr), 0 ))
+#define XGNU_UNREACHABLE    (__builtin_unreachable())
 
 #define XGNU_DO_PRAGMA(x) _Pragma (#x)
 #define XGNU_TODO(x)       XGNU_DO_PRAGMA(message ("TODO - " #x))

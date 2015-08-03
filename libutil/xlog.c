@@ -26,7 +26,7 @@
 #endif
 
 static const int xlog_fd=STDERR_FILENO;        // All output to stderr
-static const char xlog_lvl_char[]="DIWE";      // look up table
+static const char xlog_lvl_char[]="DIWCE";     // look up table
 static struct timeval xlog_start_tv;           // keep the start time (set by xlog_init)
 static volatile unsigned int xlog_record_id=0; // accessed atomically through builtins
                                                // to avoid mutex use
